@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #280E39;
+        }
+
+        * {
+            color: orange;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #formHere {
+            background-color: blueviolet;
+            padding: 40px;
+            margin: 40px;
+        }
+
+        #headForm {
+            color: whitesmoke;
+        }
+
+        .name,
+        .user {
+            font-size: 20;
+            border: 3px solid whitesmoke;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .bottomContent {
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid whitesmoke;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+
+    <h1 id="a">My forst heading</h1>
+    <p>My first paragraph</p>
+    <hr>
+    <h1>h1</h1>
+    <hr>
+    <!-- comment naja -->
+    comment here
+    <hr>
+    <p align="center">center</p>
+    <p align="right">right</p>
+    <p align="left">left</p>
+    <hr>
+    <p>img</p>
+    <img src="http://lorempixel.com/640/480/cats" alt="cat">
+    <hr>
+    <p>img set heighr and width</p>
+    <img src="http://lorempixel.com/640/480/food" width="300" height="300" alt="food">
+    <hr>
+    <a href="http://google.com">go to google</a>
+    <hr>
+    <a href="#bottom">go to bottom</a>
+    <hr>
+    <p>click <a target="_blank" href="https://google.com">here</a></p>
+    <hr>
+    <p>click <a target="_blank" href="#">here</a></p>
+    <hr>
+    <ul>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+        <li>american</li>
+    </ol>
+    <hr>
+    <p>hi <br> american <br> is <br> here</p>
+    <hr>
+    <p>tao <b>cafe</b></p>
+    <hr>
+    <p>tao <i>cafe</i></p>
+    <hr>
+    <p>tao <u>cafe</u></p>
+    <hr>
+    <p>tao <big>cafe</big></p>
+    <hr>
+    input
+    <input type="text" name="text" id="text">
+    <hr>
+    <form id="formHere" action="#" method="post">
+        <h1 id="headForm">Form Here!!</h1>
+        <div class="name row">
+            <div class="col-sm-12 col-md-3">First name:</div>
+            <div class="col-sm-12 col-md-9"><input type="text" name="firstname" id="firstname"></div>
+            <div class="col-sm-12 col-md-3">Last name:</div>
+            <div class="col-sm-12 col-md-9"><input type="text" name="lastname" id="lastname"></div>
+        </div><br>
+        <div class="user row">
+            <div class="col-sm-12 col-md-3">Username:</div>
+            <div class="col-sm-12 col-md-9"><input type="text" name="username" id="username"></div>
+            <div class="col-sm-12 col-md-3">Password:</div>
+            <div class="col-sm-12 col-md-9"><input type="password" name="password" id="password"></div>
+        </div><br>
+        <div class="userProfile row">
+            <div class="col">
+                <textarea name="userProfile" id="userPrifile" cols="50" rows="10">enter user profile here.</textarea>
+            </div>
+        </div>
+        <div class="bottomContent">
+            <div class="favourite">
+                <p>Choose your favourite characters?</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md"><input type="checkbox" name="batman" value="batman"> Batman</div>
+                    <div class="col-sm-6 col-md"><input type="checkbox" name="joker" value="joker"> Joker</div>
+                    <div class="col-sm-6 col-md"><input type="checkbox" name="bane" value="bane"> Bane</div>
+                    <div class="col-sm-6 col-md"><input type="checkbox" name="american" value="american"> Cap. American
+                    </div>
+                    <div class="col-sm-6 col-md"><input type="checkbox" name="lion" value="lion"> Lion</div>
+                </div>
+            </div>
+            <div class="chooseOne">
+                <p>choose one you like</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md"><input type="radio" name="color" value="red"> red</div>
+                    <div class="col-sm-6 col-md"><input type="radio" name="color" value="blue"> blue</div>
+                    <div class="col-sm-6 col-md"><input type="radio" name="color" value="yellow"> yellow</div>
+                    <div class="col-sm-6 col-md"><input type="radio" name="color" value="white"> white</div>
+                    <div class="col-sm-6 col-md"><input type="radio" name="color" value="brown"> brown</div>
+                </div>
+            </div>
+            <div class="age">
+                <p>How old are you?</p>
+                <select name="age" id="age">
+                    <option value="0">0</option>
+                    <option value="1">>0</option>
+                </select>
+            </div><br>
+            <div class="sendFile">
+                <p>send file</p>
+                <input type="file" name="yourFile" id="yourFile" placeholder="choose your file.">
+            </div>
+        </div><br>
+        <button type="submit">send</button>
+    </form>
+    <hr>
+    <div id="bottom">bottom</div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">Hello</div>
+            <div class="col-sm-12 col-md-4">World</div>
+            <div class="col-sm-12 col-md-4">!</div>
+        </div>
+    </div>
+    <hr>
+    <div class="alert alert-primary" role="alert">
+        <strong>primary</strong>
+    </div>
+    <hr>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+
+</html>
