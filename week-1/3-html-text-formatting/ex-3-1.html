@@ -1,0 +1,20 @@
+<!-- Print the squares of the numbers 1 - 20. Each number should be on a separate line, next to it the number 2 superscripted, an equal sign and the result. (Example: 102 = 100) [See solution] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 3-1</title>
+</head>
+<body>
+    <div id="temp"></div>
+</body>
+<script>
+    const temp = document.getElementById('temp')
+    for (let i = 0; i < 20; i++) {
+        let exponent = document.createElement('div')
+        exponent.innerHTML = `${i+1}<sup>2</sup> = ${Math.pow(i+1, 2)}`
+        temp.appendChild(exponent)
+    }
+</script>
+</html>

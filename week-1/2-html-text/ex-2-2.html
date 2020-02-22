@@ -1,0 +1,32 @@
+<!-- Print the numbers 1 - 10, each number being a different color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2-2</title>
+</head>
+<body>
+    <div id="temp"></div>
+</body>
+<script>
+    const temp = document.getElementById('temp')
+
+    function randomColor() {
+        return Math.floor(Math.random() * 256)
+    }
+
+    function randomRGBColor() {
+        return `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`
+    }
+
+    for (let i = 0; i < 10; i++) {
+        let node = document.createElement('div')
+        node.innerHTML = i+1
+        node.style.color = randomRGBColor()
+        console.log(node)
+        temp.append(node)
+    }
+
+</script>
+</html>
